@@ -18,7 +18,7 @@ if not os.path.isfile('todos.db'):
 @app.route('/')
 @cross_origin()
 def index():
-	return render_template("index.html")
+	return jsonify("Hello")
 
 
 @app.route("/request", methods=['POST'])
