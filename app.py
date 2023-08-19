@@ -5,6 +5,9 @@ import db
 from models import ToDo
 
 app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://cgwyyanruvicqz:2b10718b04fa9695f4d64241cd1bf23c56887f2a9003ec90e9cda869ed50308c@ec2-3-217-146-37.compute-1.amazonaws.com:5432/dcng12t9d2el3s"
+
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
